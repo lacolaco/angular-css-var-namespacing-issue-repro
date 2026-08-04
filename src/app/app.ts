@@ -5,8 +5,7 @@ import { CssVarNamespacer } from '@angular/platform-browser';
   selector: 'app-root',
   template: `
     <p>Component Scope Text</p>
-    <p data-global>Component Scope Text (global)</p>
-    <p [style.color]="textColor">Component Scope Text (inline)</p>
+    <p [style.color]="'var(--text-color)'">Component Scope Text (inline)</p>
   `,
   styles: `
     :host {
